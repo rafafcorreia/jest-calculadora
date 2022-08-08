@@ -13,4 +13,4 @@
 }
 ```
 
-4. Para rodar os testes criados, utilize o comando: yarn test 
+4. Para rodar os testes criados, utilize o comando: `yarn test` 
