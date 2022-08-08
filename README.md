@@ -7,11 +7,9 @@
 3. Adicione esse bloco dentro do package.json:
 
 ```
-{
   "scripts": {
     "test": "jest"
   }
-}
 ```
 
 4. Para rodar os testes criados, utilize o comando: `yarn test` 
