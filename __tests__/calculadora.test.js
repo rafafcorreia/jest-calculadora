@@ -1,6 +1,4 @@
 const calculadora = require('../src/calculadora');
-const fs = require("fs");
-const { parse } = require("csv-parse");
 let massaSoma = [[1, 2, 3],[3, 7, 10]];
 
 test.each(massaSoma)('somar %f + %f', (a, b, esperado) => {
