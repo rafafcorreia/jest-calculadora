@@ -10,6 +10,7 @@
   "scripts": {
     "test": "jest"
   }
-}```
+}
+```
 
 4. Para rodar os testes criados, utilize o comando: yarn test 
