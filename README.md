@@ -1,4 +1,4 @@
-# Guia Rápido
+# Guia Rápido para criar um projeto semelhante
 
 1. Com um terminal em modo administrador, rode o comando: `corepack enable`
 
