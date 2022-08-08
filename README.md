@@ -6,7 +6,8 @@
 
 3. Adicione esse bloco dentro do package.json:
 
-```{
+```
+{
   "scripts": {
     "test": "jest"
   }
