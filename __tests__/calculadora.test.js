@@ -8,12 +8,17 @@ test.each(massaSoma)('somar %f + %f', (a, b, esperado) => {
 });
 
 test('subtrair 1 - 2', () => {
+    //Prepara / Configura
     const a = 1;
     const b = 2;
     const esperado = -1;
     const subtrairDoisNumeros = calculadora.subtrairDoisNumeros;
     
-    expect(subtrairDoisNumeros(a, b)).toBe(esperado)
+    //Executa
+    const obtido = subtrairDoisNumeros(a, b);
+    
+    //Valida
+    expect(obtido).toBe(esperado);
 });
 
 test('multiplicar 1 * 2', () => {
