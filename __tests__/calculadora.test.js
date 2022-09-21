@@ -1,5 +1,9 @@
 const calculadora = require('../src/calculadora');
-let massaSoma = [[1, 2, 3],[3, 7, 10]];
+let massaSoma = [
+    [1, 2, 3],
+    [3, 7, 10],
+    [5, 8, 13]
+];
 
 test.each(massaSoma)('somar %f + %f', (a, b, esperado) => {
     const somarDoisNumeros = calculadora.somarDoisNumeros;
