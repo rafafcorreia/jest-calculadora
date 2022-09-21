@@ -9,10 +9,10 @@ const multiplicarDoisNumeros = (a, b) => a * b;
 const dividirDoisNumeros = (a, b) => a / b;
 
 module.exports = {
-    somarDoisNumeros: somarDoisNumeros,
-    subtrairDoisNumeros: subtrairDoisNumeros,
-    multiplicarDoisNumeros: multiplicarDoisNumeros,
-    dividirDoisNumeros: dividirDoisNumeros
+    somarDoisNumeros,
+    subtrairDoisNumeros,
+    multiplicarDoisNumeros,
+    dividirDoisNumeros
 };
 /* module.exports = {
     somarDoisNumeros: function(a, b) {
