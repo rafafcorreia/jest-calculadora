@@ -5,6 +5,11 @@ let massaSoma = [
     [5, 8, 13]
 ];
 
+let massaDividir = [
+    [3, 2, 1.5],
+    [3, 0, Infinity]
+]
+
 test.each(massaSoma)('somar %f + %f', (a, b, esperado) => {
     const somarDoisNumeros = calculadora.somarDoisNumeros;
     
@@ -34,11 +39,6 @@ test('multiplicar 1 * 2', () => {
     expect(multiplicarDoisNumeros(a, b)).toBe(esperado);
 });
 
-test('dividir 1 / 2', () => {
-    const a = 1;
-    const b = 2;
-    const esperado = 0.5;
-    const dividirDoisNumeros = calculadora.dividirDoisNumeros;
-
-    expect(dividirDoisNumeros(a, b)).toBe(esperado);
+test.each(massaDividir)('dividir %f / %f', (a, b, esperado) => {
+    expect(calculadora.dividirDoisNumeros(a, b)).toBe(esperado);
 })
