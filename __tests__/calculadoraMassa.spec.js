@@ -1,7 +1,7 @@
 const calculadora = require('../src/calculadora');
 
 //Importa a massa
-const massa = require('../data/massa')
+const massa = require('../massa')
 
 //Soma
 test.each(massa.array.map(elemento => [
@@ -40,4 +40,4 @@ test.each(massa.array.map(elemento => [
     elemento.esperadoDivisao]))
     ('dividir %f / %f com massa', (a, b, esperado) => {
     expect(calculadora.dividirDoisNumeros(a, b)).toBe(esperado);
-});
+}); 
