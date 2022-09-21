@@ -1,12 +1,8 @@
 # Guia Rápido para criar um projeto semelhante
 
-1. Com um terminal em modo administrador, rode o comando: `corepack enable`
+1. Com um terminal em modo administrador, rode o comando: `npm install --save-dev jest`
 
-2. Vá no seu projeto e utilize o comando: `yarn init -2`
-
-3. Baixe o Jest utilizando o comando: `yarn add --dev jest`
-
-4. Adicione esse bloco dentro do package.json:
+2. Adicione esse bloco dentro do package.json:
 
 ```
   "scripts": {
@@ -14,4 +10,4 @@
   }
 ```
 
-5. Para rodar os testes criados, utilize o comando: `yarn test` 
+3. Para rodar os testes criados, utilize o comando: `npm run test`
