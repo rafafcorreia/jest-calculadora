@@ -5,7 +5,7 @@ let massaSoma = [
     [5, 8, 13]
 ];
 
-let massaDividir = [
+let massaDivisao = [
     [3, 2, 1.5],
     [3, 0, Infinity]
 ]
