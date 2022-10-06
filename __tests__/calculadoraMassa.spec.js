@@ -10,7 +10,11 @@ test.each(massa.array.map(elemento => [
     elemento.esperadoSoma]))
     ('somar %f + %f com massa', (a, b, esperado) => {
 
-    expect(calculadora.somarDoisNumeros(a, b)).toBe(esperado);
+    const somarDoisNumeros = calculadora.somarDoisNumeros;
+
+    const obtido = somarDoisNumeros(a, b);
+
+    expect(obtido).toBe(esperado);
 });
 
 //Subtração
@@ -20,7 +24,9 @@ test.each(massa.array.map(elemento => [
     elemento.esperadoSubtracao]))
     ('subtrair %f + %f com massa', (a, b, esperado) => {
 
-    expect(calculadora.subtrairDoisNumeros(a, b)).toBe(esperado);
+    const obtido = calculadora.subtrairDoisNumeros(a, b);
+
+    expect(obtido).toBe(esperado);
 });
 
 //Subtração
