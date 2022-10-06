@@ -1,43 +1,43 @@
 const calculadora = require('../src/calculadora');
 
-let massaSoma = [
-    [1, 2, 3],
-    [3, 7, 10],
-    [5, 8, 13]
-];
-
 let massaDivisao = [
     [3, 2, 1.5],
     [3, 0, Infinity]
 ];
 
-test.each(massaSoma)('somar %f + %f', (a, b, esperadoSoma) => {
-
+test('somar %f + %f', () => {
+    // Prepara / Configura
+    const a = 2;
+    const b = 3;
+    const esperado = 5;
     const somarDoisNumeros = calculadora.somarDoisNumeros;
-    expect(somarDoisNumeros(a, b)).toBe(esperadoSoma);
+
+    // Executa
+    const obtido = somarDoisNumeros(a, b);
+
+    // Valida
+    expect(somarDoisNumeros(a, b)).toBe(esperado);
 });
 
 test('subtrair 1 - 2', () => {
     //Prepara / Configura
-    const a = 1;
-    const b = 2;
+    const a = 2;
+    const b = 3;
     const esperado = -1;
-    const subtrairDoisNumeros = calculadora.subtrairDoisNumeros;
-    
+
     //Executa
-    const obtido = subtrairDoisNumeros(a, b);
-    
+    const obtido = calculadora.subtrairDoisNumeros(a, b);
+
     //Valida
     expect(obtido).toBe(esperado);
 });
 
 test('multiplicar 1 * 2', () => {
-    const a = 1;
-    const b = 2;
-    const esperado = 2;
-    const multiplicarDoisNumeros = calculadora.multiplicarDoisNumeros;
-    
-    expect(multiplicarDoisNumeros(a, b)).toBe(esperado);
+    const a = 2;
+    const b = 3;
+    const esperado = 6;
+
+    expect(calculadora.multiplicarDoisNumeros(a, b)).toBe(esperado);
 });
 
 test.each(massaDivisao)('dividir %f / %f', (a, b, esperado) => {
