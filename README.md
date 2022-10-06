@@ -1,8 +1,10 @@
 # Guia Rápido para criar um projeto semelhante
 
-1. Com um terminal em modo administrador, rode o comando: `npm install --save-dev jest`
+1. Inicializar o projeto: `npm init -y`
 
-2. Adicione esse bloco dentro do package.json:
+2. Com um terminal em modo administrador, rode o comando: `npm install --save-dev jest`
+
+3. Adicione esse bloco dentro do package.json:
 
 ```
   "scripts": {
@@ -10,4 +12,4 @@
   }
 ```
 
-3. Para rodar os testes criados, utilize o comando: `npm run test`
+4. Para rodar os testes criados, utilize o comando: `npm run test`
